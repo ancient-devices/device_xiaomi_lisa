@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayLisa \
     WifiResOverlayLisa
 
-ifneq ($(ARROW_GAPPS), true)
+ifneq ($(ANCIENT_GAPPS), true)
 PRODUCT_PACKAGES += \
     DialerOverlayLisa
 endif
@@ -157,6 +157,8 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     DevicesOverlay \
     DevicesAndroidOverlay
+#Overiride
+PRODUCT_PRODUCT_PROPERTIES += ro.control_privapp_permissions=log
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -173,7 +175,7 @@ include $(LOCAL_PATH)/properties/default.mk
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Telephony & IMS  
+# Telephony & IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \

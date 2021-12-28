@@ -12,15 +12,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
 # Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
+
+ANCIENT_GAPPS := true
+ANCIENT_OFFICIAL := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lisa
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Xiaomi 11 Lite NE
-PRODUCT_NAME := arrow_lisa
+PRODUCT_NAME := ancient_lisa
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
