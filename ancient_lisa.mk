@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/lisa/device.mk)
 # Inherit common ArrowOS configurations
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
+TARGET_GAPPS_ARCH := arm64
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 ANCIENT_GAPPS := true
