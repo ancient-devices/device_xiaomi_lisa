@@ -12,9 +12,15 @@
     "branch": "lineage-18.1"
   },
   {
-    "remote": "gitlab",
-    "repository": "ganeshi4u/android_vendor_xiaomi_lisa",
+    "remote": "github",
+    "repository": "PixelOS-Devices/vendor_xiaomi_lisa",
     "target_path": "vendor/xiaomi/lisa",
-    "branch": "arrow-11.0-oem-vendor"
+    "branch": "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt",
+    "branch": "arrow-12.0"
   }
 ]
