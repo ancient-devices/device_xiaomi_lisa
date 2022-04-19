@@ -12,15 +12,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
+# Inherit some common Ancient stuff.
+ANCIENT_OFFICIAL=true
+ANCIENT_GAPPS=true
+ANCIENT_WEEABO=true
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lisa
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 11 Lite 5G NE
-PRODUCT_NAME := arrow_lisa
+PRODUCT_NAME := ancient_lisa
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

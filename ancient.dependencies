@@ -1,0 +1,38 @@
+[
+  {
+    "remote": "github",
+    "repository": "ancient-devices/device_xiaomi_sm8350-common",
+    "target_path": "device/xiaomi/sm8350-common",
+    "branch": "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/kernel_xiaomi_lisa",
+    "target_path": "kernel/xiaomi/lisa",
+    "branch": "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/vendor_xiaomi_lisa",
+    "target_path": "vendor/xiaomi",
+    "branch": "twelve
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/hardware_qcom_audio",
+    "target_path": "hardware/qcom-caf/sm8350/audio",
+    "branch": "lisa_twelve_sm8350"
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/sm8350/display",
+    "branch": "lisa_twelve_sm8350"
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/sm8350/media",
+    "branch": "lisa_twelve_sm8350"
+  }
+]
